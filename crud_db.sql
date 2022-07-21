@@ -31,8 +31,8 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `tanggalPasang` date DEFAULT NULL,
-  `noId` int(20) DEFAULT NULL,
-  `noHp` int(15) DEFAULT NULL,
+  `noId` bigint(30) DEFAULT NULL,
+  `noHp` bigint(40) DEFAULT NULL,
 
 
   `paket` varchar(255) DEFAULT NULL,
@@ -55,9 +55,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `tanggalPasang`,`noId`, `noHp`,`paket`,
 `alamat`,`keterangan`,`createdAt`, `updatedAt`) VALUES
-(1, 'Frengki Simorangkir (RUMKITBAN)', '2020-12-01', 12385 2020 00104, 0821 6500 3001 ,'paket mantap',     'Jl. Sisingamangaraja, No. 142','P1 30MBPS','2022-03-29 03:23:37', '2022-03-29 03:23:37'),
-(2, 'Atika Dwie Handayani', '2020-12-28', 12385 2020 00140, 0853 6027 8101,'paket mantap', 'Jl. Dame No.36','P1 30MBPS', '2022-04-05 15:46:30', '2022-04-05 15:46:30'),
-(3, 'Meni Yanti Pasaribu', '2021-02-25',12385 2020 00263, 0813 7017 4147,'paket mantap','Gg. Kenanga atas','P1 30MBPS', '2022-06-03 02:01:55', '2022-06-03 02:07:06');
+(1, 'Frengki Simorangkir (RUMKITBAN)', '2020-12-01', 12385202000104, 6282165003001 ,'paket mantap','Jl. Sisingamangaraja No. 142','P1 30MBPS','2022-03-29 03:23:37', '2022-03-29 03:23:37'),
+(2, 'Atika Dwie Handayani', '2020-12-28', 12385202000140, 6285360278101,'paket mantap', 'Jl. Dame No.36','P1 30MBPS', '2022-04-05 15:46:30', '2022-04-05 15:46:30'),
+(3, 'Meni Yanti Pasaribu', '2021-02-25',12385202000263, 6281370174147,'paket mantap','Gg. Kenanga atas','P1 30MBPS', '2022-06-03 02:01:55', '2022-06-03 02:07:06');
 
 --
 -- Indexes for dumped tables
